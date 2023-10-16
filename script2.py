@@ -9,7 +9,9 @@ class Auteur:
         
 
 myauteur = Auteur("aut1")
+myauteur2 = Auteur("uuc")
 mylivre = Livre("livre test1",myauteur)
+mylivre2=Livre("livre test2",myauteur2)
 
 class Bibliotheque :
     def __init__(self) -> None:
@@ -33,6 +35,7 @@ class Bibliotheque :
 
 mybib = Bibliotheque()
 res = mybib.ajouter_livre(mylivre)
-res = mybib.emprunter_livre(mylivre)
+res = mybib.ajouter_livre(mylivre2)
+res = mybib.emprunter_livre(mylivre2)
 print(res)
         
